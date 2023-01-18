@@ -708,13 +708,13 @@ article::before {
       gap: 15px;
     }
     .information .wrapper .container12 {
-      width: 100%;
+      width: 50%;
       height: 25vmin;
       font-size: 8px;
     }
 
     .information .wrapper .container12 .iconinfo {
-        font-size: 15px;
+        font-size: 16px;
       }
 
   }
