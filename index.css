@@ -651,6 +651,11 @@ article::before {
 
 /*INFORMATION*/
 
+.information{
+  padding: 30px 0;
+  background: #191919;
+}
+
 .information .wrapper {
   padding: 0 8%;
   position: inherit;
@@ -673,8 +678,8 @@ article::before {
   position: relative;
   font-size: 16px;
   border-radius: 0.5em;
-  background-color: #21242b;
-  border-bottom: 10px solid #18f98f;
+  background-color: /*#21242b*/ #191919;
+  /* border-bottom: 10px solid #18f98f; */
 }
 
 .information .wrapper .container12 .iconinfo {
@@ -1038,7 +1043,7 @@ span.text {
   font-size: 15px;
   padding: 20px 50px;
   color: #fff;
-  background-color: rgb(105, 94, 94);
+  background-color: #191919;
   position: relative;
   border-radius: 6px;
   margin-right: 53px;
@@ -1073,7 +1078,7 @@ span.text {
   font-size: 15px;
   padding: 20px 50px;
   color: #fff;
-  background-color: rgb(105, 94, 94);
+  background-color: #191919;
   position: relative;
   border-radius: 6px;
   margin-left: 53px;
@@ -1144,6 +1149,101 @@ span.text {
 
 
 /* --------SLIDER AREA--------- */
+
+.slider img {
+  width: auto;
+  height: 150px;
+  padding: 0 20px;
+  animation: scroll 30s linear infinite;
+}
+
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+.slider {
+  margin-top: 70px;
+  background-color: #191919;
+  padding: 2.5em 2em;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-1000%)}
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    padding: 0 2em;
+  }
+}
+
+
+/* ------------MORE INFORMATION--------------------- */
+
+.more-information {
+	background: #fff;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.container7 {
+  margin: 0 95px;
+  display: flex;
+}
+
+.more-information .colin-md-6 {
+  padding-right: 35px;
+}
+
+.more-information .col-md-6 {
+  padding-left: 35px;
+}
+
+.more-information .sides {
+	background: #191919;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-family: "Open Sans", Arial, sans-serif;
+	margin-top: 20px;
+}
+
+.more-information .sides h4 {
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+	letter-spacing: 1px;
+  margin: 15px 0;
+}
+
+.more-information .sides hr {
+	width: 75px;
+  margin: 19px auto;
+}
+
+.more-information .sides p {
+	color: #fff;
+	font-size: 15px;
+	padding: 15px 30px;
+}
+
+@media screen and (max-width:920px) {
+  .container7 {
+    display: contents;
+    margin: 0 45px;
+  }
+
+  .more-information .colin-md-6 {
+    padding: 0 25px;
+  }
+
+  .more-information .col-md-6 {
+    padding: 0 25px;
+  }
+}
 
 
 
