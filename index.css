@@ -651,7 +651,7 @@ article::before {
 
 /*INFORMATION*/
 
-.information{
+.information {
   padding: 30px 0;
   background: #191919;
 }
@@ -678,7 +678,9 @@ article::before {
   position: relative;
   font-size: 16px;
   border-radius: 0.5em;
-  background-color: /*#21242b*/ #191919;
+  background-color:
+    /*#21242b*/
+    #191919;
   /* border-bottom: 10px solid #18f98f; */
 }
 
@@ -1171,8 +1173,13 @@ span.text {
 }
 
 @keyframes scroll {
-  0% {transform: translateX(0);}
-  100% {transform: translatex(-1000%)}
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translatex(-1000%)
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1185,9 +1192,9 @@ span.text {
 /* ------------MORE INFORMATION--------------------- */
 
 .more-information {
-	background: #fff;
-	padding-top: 20px;
-	padding-bottom: 40px;
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .container7 {
@@ -1204,30 +1211,30 @@ span.text {
 }
 
 .more-information .sides {
-	background: #191919;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	font-family: "Open Sans", Arial, sans-serif;
-	margin-top: 20px;
+  background: #191919;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: "Open Sans", Arial, sans-serif;
+  margin-top: 20px;
 }
 
 .more-information .sides h4 {
-	text-align: center;
-	color: #fff;
-	font-size: 22px;
-	letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1px;
   margin: 15px 0;
 }
 
 .more-information .sides hr {
-	width: 75px;
+  width: 75px;
   margin: 19px auto;
 }
 
 .more-information .sides p {
-	color: #fff;
-	font-size: 15px;
-	padding: 15px 30px;
+  color: #fff;
+  font-size: 15px;
+  padding: 15px 30px;
 }
 
 @media screen and (max-width:920px) {
@@ -1243,6 +1250,137 @@ span.text {
   .more-information .col-md-6 {
     padding: 0 25px;
   }
+}
+
+/* -----------SUBSCRIBE------------------ */
+
+.subscribe {
+  background-image: url("Images/building.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.container-sub {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 55px auto;
+}
+
+.subscribe .overlay {
+  height: 40%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 60px;
+  padding-bottom: 80px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.subscribe .overlay h3 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.subscribe .overlay p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+
+
+.subscribe .overlay .form-subscribe {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.subscribe .overlay .input-group {
+  position: relative;
+  display: table;
+}
+
+.subscribe .overlay .form-input {
+  background: rgba(255, 255, 255, 0.4);
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  letter-spacing: 1px;
+  width: 100%;
+  position: relative;
+  float: left;
+  height: 50px;
+  margin-bottom: 0;
+  border-top-left-radius: 36px;
+  border-bottom-left-radius: 36px;
+  outline: none;
+}
+
+.subscribe .overlay .btn-group {
+  display: table-cell;
+  width: 1%;
+}
+
+.subscribe .overlay .btn {
+  height: 50px;
+  padding: 0 40px;
+  margin-top: -71px;
+  background: #fff;
+  color: #000;
+  position: relative;
+  margin-left: -1px;
+  border-top-right-radius: 36px;
+  border-bottom-right-radius: 36px;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+@media (min-width: 750px) {
+  .container-sub {
+    width: 570px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .subscribe .overlay h3 {
+    font-size: 45px;
+  }
+
+  .subscribe .overlay p {
+    font-size: 10px;
+  }
+
+  .subscribe .overlay .form-input, .subscribe .overlay .btn {
+    height: 40px;
+  }
+
+  .subscribe .overlay .btn {
+    margin-top: -55px;
+    padding: 0 20px;
+  }
+
 }
 
 
