@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--WEBSITE ICON-->
+    <link rel = "icon" href ="icon.ico" type = "image/x-icon">
+
+    
+
+
+</head>
+<body>
+
+    <section class="header">
+
+        <nav class="top">
+            <div class="container1">
+                <div class="contact-info-left pull-left">
+                    <span class="fa fa-phone"></span>
+                    <a href="#">+91 999 999 9999</a>
+                </div>
+
+                <ul class="social-icons pull-right">
+                    <li>
+                        <a href="#" class="icon fa fa-facebook"></a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="icon fa fa-pinterest-p"></a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="icon fa fa-instagram"></a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="icon fa fa-google-plus"></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <nav class="nav">
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <button class="login-button" href="#">Sign In</button>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" style="color: black ;"></i>
+
+        </nav>
+
+    </section>
+
+    <div class="small-timeline">
+        <ul class="bread">
+            <li>
+                <a href="index.html">Home</a>
+                <span class="divider">/</span>
+            </li>
+
+            <li class="active">
+                <span class="slash">/</span> Comapany
+            </li>
+        </ul>
+    </div>
+
+    <div class="about-info">
+        <div class="container2">
+            <div class="col-1">
+                <div class="image">
+                    <img class="img-responsive" src="Images/about-us.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+ 
+    <script>
+        const typedTextSpan = document.querySelector(".typed-text");
+        const cursorSpan = document.querySelector(".cursor");
+
+        const textArray = ["simple", "business", "beautiful", "fun"];
+        const typingDelay = 200;
+        const erasingDelay = 100;
+        const newTextDelay = 2000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+            if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } 
+        else {
+            cursorSpan.classList.remove("typing");
+            setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+              if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+              typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+              charIndex--;
+              setTimeout(erase, erasingDelay);
+            } 
+
+            else {
+              cursorSpan.classList.remove("typing");
+              textArrayIndex++;
+              if(textArrayIndex>=textArray.length) textArrayIndex=0;
+              setTimeout(type, typingDelay + 1100);
+            }
+        }
+
+    document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+        if(textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+    </script>
+    
+
+    
+
+
+    
+
+ <!--FOOTER-->   
+<section class="footer">
+    <h4>Keep in Touch</h4>
+    
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-github"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+
+    <p>Made with <i class="fa fa-heart-o"></i> by 
+        <a href="https://avilashpopo.github.io/Personal.portfolio.io/" style="text-decoration: none; color:white;" target="_blank" > 
+            Avilash Roy 
+        </a> 
+    </p>
+
+</section>
+
+
+
+<!--JAVA SCRIPT FOR TOGGLE MENU-->
+
+<script>
+
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu () {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu () {
+            navLinks.style.right = "-200px";
+        }
+
+</script>
+
+</script>
+    
+
+
+
+</body>
+</html>
