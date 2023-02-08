@@ -359,7 +359,8 @@ ul {
 @media only screen and (max-width:768px) {
     .col-1 .text {
         margin-top: 30px;
-        margin-left: 55px;
+        margin-left: 52px;
+        margin-right: -68px;
     }
 }
 
