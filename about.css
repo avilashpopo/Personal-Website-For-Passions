@@ -248,6 +248,7 @@ ul {
     position: relative;
     padding-right: 15px;
     padding-left: 15px;
+    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -259,7 +260,7 @@ ul {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 770px) {
     .container2 {
         flex-direction: column;
         width: 970px;
@@ -276,7 +277,7 @@ ul {
 
 .small-timeline {
     margin: 0 80px;
-    margin-top: 50px;
+    margin-top: 70px;
     border-radius: 5px;
 }
 
@@ -325,6 +326,8 @@ ul {
     margin-top: 0px;
     font-size: 22px;
     letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .about-info .text p {
@@ -336,8 +339,7 @@ ul {
 
 .container2 .col-1 {
     min-height: 1px;
-    padding-right: 77px;
-    padding-left: 15px;
+    padding-right: 99px;
 }
 
 @media (min-width:992px) {
@@ -353,6 +355,166 @@ ul {
     height: auto;
     padding: 0 50px;
 }
+
+@media only screen and (max-width:768px) {
+    .col-1 .text {
+        margin-top: 30px;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 770px) {
+    .about-info .col-1 .text h3 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+@media(max-width:992px) {
+    .small-timeline {
+        margin: 0 70px;
+    }
+}
+
+@media(max-width:600px) {
+    .small-timeline {
+        margin: 0 40px;
+    }
+}
+
+
+/* Company */
+
+.sechead h2 {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.sechead hr {
+    text-align: center;
+    width: 15%;
+    margin: 30px auto;
+}
+
+.row21 {
+    margin-top: 40px;
+    margin-left: 7%;
+}
+
+.column21 {
+    float: left;
+    width: 28.3%;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+@media screen and (max-width:980px) {
+
+    .row21 {
+        margin-left: 12%;
+    }
+
+    .column21 {
+        width: 43.3%;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .column21 {
+        margin-left: -10%;
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container21 {
+    padding: 24px 16px;
+}
+
+.container21 h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.jhat {
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.jhat ul li {
+    text-align: center;
+    margin: 5px 25px;
+}
+
+.jhat .social-center a {
+    text-decoration: none;
+    color: #000;
+}
+
+.jhat .fa:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.jhat .fa {
+    text-align: center;
+    font-size: 22px;
+    padding: 3px 5px;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+
+.container21 p {
+    font-size: 15px;
+}
+
+.container21::after, .row21::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+    margin-bottom: 8px;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ENd of Company */
+
+
 
 
 
