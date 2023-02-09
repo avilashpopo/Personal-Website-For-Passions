@@ -225,7 +225,7 @@ ul {
     background-color: transparent;
     border: 1.5px solid #000000;
     border-radius: 2em;
-    color: #000;
+    color: #000000;
 }
 
 .login-button:hover {
@@ -235,7 +235,7 @@ ul {
     transition: all ease-in-out 350ms;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 750px) {
     .login-button {
         border: 1.5px solid rgb(255, 255, 255);
         color: #fff;
@@ -359,7 +359,7 @@ ul {
 @media only screen and (max-width:768px) {
     .col-1 .text {
         margin-top: 30px;
-        margin-left: 52px;
+        margin-left: 38px;
         margin-right: -68px;
     }
 }
@@ -427,6 +427,10 @@ ul {
         width: 100%;
         display: block;
     }
+
+    .container21 {
+        text-align: center;
+    }
 }
 
 .card {
@@ -438,8 +442,16 @@ ul {
 }
 
 .container21 h2 {
-    font-size: 25px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.container21 .title {
+    font-weight: 600;
+    padding-bottom: 8px;
+    cursor: pointer;
 }
 
 .jhat {
@@ -447,9 +459,8 @@ ul {
     padding-bottom: 3px;
 }
 
-.jhat ul li {
-    text-align: center;
-    margin: 5px 25px;
+.jhat ul i {
+    margin: 0 5px;
 }
 
 .jhat .social-center a {
@@ -460,18 +471,20 @@ ul {
 .jhat .fa:hover {
     background-color: #000;
     color: #fff;
+    transform: translateY(-5px);
 }
 
 .jhat .fa {
     text-align: center;
     font-size: 22px;
-    padding: 3px 5px;
+    padding: 4px 7px;
     border: 1px solid #000;
     transition: 0.5s;
 }
 
 .container21 p {
     font-size: 15px;
+    font-weight: 200;
 }
 
 .container21::after, .row21::after {
@@ -503,18 +516,85 @@ ul {
     background-color: #555;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* ENd of Company */
 
+/* QUOTE */
+
+.col-q{
+    margin-left: 10%;
+    padding-top: 41px;
+    padding-bottom: 20em;
+    height: 50em;
+}
+
+.col-q .quotes {
+    float: left;
+    border-radius: 12px;
+    background-color: #000;
+    width: 37.3%;
+    margin: 25px;
+    padding: 30px;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+
+.quotes i {
+    color: #fff;
+    font-size: 35px;
+    padding-bottom: 19px;
+}
+
+.quotes .quote-box {
+    color: #fff;
+    text-align: center;
+}
+
+.quote-box hr {
+    width: auto;
+    margin: 18px;
+    color: #fff;
+}
+
+.quotes .blog-bottom {
+    color: #fff;
+    margin: 15px;
+}
+
+.badge {
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 0 10px;
+    background-color: #555;
+    border-radius: 222px;
+    cursor: pointer;
+}
+
+.pull-right i {
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.pull-right i:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width:795px) {
+    .col-q {
+        margin-left: 15%;
+        margin-bottom: 26em;
+    }
+
+    .col-q .quotes {
+        width: 70%;
+        margin: 20px 0;
+    }
+}
+
+
+
+/* END OF QUOTE */
 
 
 
