@@ -133,10 +133,7 @@ ul {
 }
 
 .nav {
-  display: flex;
-  flex-direction: row-reverse;
   padding: 1% 4%;
-  margin: 5px;
   justify-content: space-between;
   align-items: center;
   background: #e7e7e7;
@@ -186,6 +183,13 @@ ul {
 /*Responsive Adding Media Queries*/
 
 @media (max-width:750px) {
+
+  .nav {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5px;
+  }
+
   .nav-links ul li {
     display: block;
   }
@@ -1372,7 +1376,8 @@ span.text {
     font-size: 10px;
   }
 
-  .subscribe .overlay .form-input, .subscribe .overlay .btn {
+  .subscribe .overlay .form-input,
+  .subscribe .overlay .btn {
     height: 40px;
   }
 
